@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor PDF</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer type="module"></script>
+    <script src="./src/js/index.js" type="module" defer></script>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <div>
+                <ul class="container-li">
+                    <li id="title">Titulo</li>
+                    <li id="paragraph">Paragrafo</li>
+                    <li id="btn-modal">Mesclagem</li>
+                    <li id="btn-pdf">Gerar PDF</li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="container-modal" class="hide">
+            <div id="modal">
+                <div class="header-modal">
+                    <div>
+                        <h2>Campos de Mesclagem</h2>
+                        <p id="btn-close">x</p>
+                    </div>
+                    <input type="search" placeholder="Pesquisar..." id="input-search">
+                </div>
+                <div class="select-modal">
+                    <a href="#id1">Dados Emissão</a>
+                    <a href="#id2">Dados do Aluno</a>
+                    <a href="#id3">Dados do Pai</a>
+                    <a href="#id4">Dados da Mãe</a>
+                    <a href="#id5">Dados do Resp Financeiro</a>
+                    <a href="#id6">Dados do Resp Pedagógico</a>
+                    <a href="#id7">Dados do Curso</a>
+                    <a href="#id8">Dados da Empresa</a>
+                </div>
+                <div class="options-modal"></div>
+            </div>
+        </div>
+        <div id="container-div-editable"></div>
+    </div>
+</body>
+
+</html>
+

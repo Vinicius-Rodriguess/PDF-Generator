@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    width: 0.3rem;
+    height: 0.3rem;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 3, 3, 0);
+    width: 0.3rem;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #858585;
+    border-radius: 10px;
+}
+
+.hide {
+    display: none !important;
+}
+
+.container-li {
+    display: flex;
+    padding: 0.5rem;
+    gap: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px;
+}
+
+.container-li li {
+    list-style: none;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    border-radius: 0.5rem;
+    transition: 0.2s all linear;
+}
+
+.container-li li:hover {
+    background-color: #f2f2f2;
+}
+
+#container-div-editable {
+    display: flex;
+    flex-direction: column;
+    background-color: #ececec;
+    padding-top: 3rem;
+}
+
+.div-editable {
+    margin: 1rem auto;
+    width: 210mm;
+    display: flex;  
+    flex-direction: column;
+    gap: 1rem;
+    resize: none;
+    border: none;
+    background-color: #fff;
+    padding: 1rem;
+    height: 297mm;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.div-editable:focus {
+    outline: none;
+}
+
+.div-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.div-paragraph {
+    text-align: justify;
+    font-size: 1em;
+}
+
+#container-modal {
+    position: fixed;
+    inset: 0;
+    background-color: #dbdbdbbe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal {
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 80%;
+    height: 90%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.header-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header-modal div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-modal div p{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.header-modal h2 {
+    font-weight: normal;
+}
+
+.header-modal input {
+    padding: 0.5rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #ececec;
+    transition: all 0.2s linear;
+}
+
+.header-modal input:focus {
+    outline: none;
+}
+
+.header-modal input:hover {
+    background-color: #dbdbdb;
+}
+
+
+.select-modal {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 0 0 .1rem;
+    gap: 1rem;
+    overflow-x: auto;
+    margin-bottom: .5rem;
+}
+
+.select-modal a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0.2rem;
+    font-size: 0.85rem;
+    text-wrap: nowrap;
+    transition: all 0.2s linear;
+}
+
+.select-modal a:hover {
+    border-bottom: 1px solid #000000;
+}
+
+.options-modal {
+    display: flex;
+    padding: .5rem;
+    flex-direction: column;
+    max-height: 75%;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.options-modal div span{
+    background-color: rgb(143, 143, 150);
+    display: block;
+    color: #fff;
+    padding: 0.2rem;
+    font-size: 0.85rem;
+}
+
+.options-modal p {
+    font-size: 0.85rem;
+    padding: 4px 0px;
+}
+
+.options-modal p:hover {
+    background-color: #dbdbdb;
+}
